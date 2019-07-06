@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bailão Federal</title>
+    <link rel="icon" href="assets/img/foto3.jpg">
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/js/script.js">
+</head>
+<nav>
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle"/>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="contatos.html">Contatos</a>
+        <a href="MC_F.html">MC&F</a>
+    </div>
+</nav>
+<body>
+  <section id="mcf">
+    <h1> <em>MARIO CEZAR & </em></h1>
+    <H2> <em>FILIPE</em></H2>
+  </section>
+
+
+  
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
+      
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+   
+          width: '100%',
+          videoId: '4em_hUawuSM',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+  </body>
+  </html>
+
+<section id="nossa">
+  <h1> NOSSA HISTÓRIA!</h1>
+    <p>Mario Cezar e Filipe, amigos de longa data e parceiros de dupla a pouco mais de três anos.
+       Sendo residentes na capital do estado do Tocantins, por onde vem atingindo um público bastante variado. 
+       Filipe natural de Palmeirópolis, interior do Tocantins, e Mario Cezar natural de Campos Belos, interior do Goiás, 
+       onde ambos tem influências musicais de Zezé de Camargo e Luciano, Leandro e Leonardo, mas atualmente a dupla tem como 
+       referência os artistas da atualidade como Henrique e Juliano, Wesley Safadão, George Henrique e Rodrigo, onde eles se 
+       inspiram para realizar seu espetáculo. A dupla vem atingindo a capital e todo o estado aos poucos, fazendo shows pelas 
+       cidades do interior do estado e tendo uma aceitação muito positiva. A primeira música de trabalho da dupla "TÔ NA MÍDIA" 
+       foi lançado dia 26 de fevereiro juntamente com um video clipe, que está disponível na página da dupla no Youtube. A dupla 
+       fez lançamento na capital com novos sucessos autorais da dupla como "CADÊ A CRISE?" e "ENCONTRO NO ALTAR" , onde a dupla 
+       vem trabalhando em cima das mesmas! O DVD SIMPLESMENTE, que foi gravado na capital, foi lançado em todas as grandes 
+       plataformas digitais e também no youtube!É um projeto que vem rendendo muitos frutos a dupla tocantinense!</p>
+</section>
+
+
+
+  
+<section id= "link">
+   <h2>  <p> Conheça um pouco mais pelas redes sociais. <a href="https://www.instagram.com/mariocezarefilipe/">@mariocezarefilipe</a></p> </h2>
+  </i>
+</section>
+  </section>
+</body>
+</html>

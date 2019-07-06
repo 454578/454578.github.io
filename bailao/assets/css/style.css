@@ -1,0 +1,188 @@
+@font-face{
+    font-family 'HARLOWSI';
+    src: url('../fonts/HARLOWSI.TTF');
+}
+
+body{
+background-color:rgb(0, 0, 0);
+
+}
+#cascao{
+    text-align: center;
+    color: blueviolet;
+    font-size: 20px;
+}
+
+#gusta h2{
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(219, 215, 215);
+    text-align: center;
+   
+}
+#gusta h1{
+    color: violet;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+  
+}
+
+#img{
+    background-image: url("../img/foto1.jpg");
+    background-size: cover;
+    background-position: center;
+   
+    padding: 300px 0px 300px 0px;
+    margin: 20px 0px;
+}
+#tex{
+    font-family: 'HARLOWSI';
+    text-align: center;
+    font-size: 18px;
+    color:rgb(219, 215, 215);
+}
+#tex h1{
+    color: rgb(255, 97, 255);
+}
+#foto{
+    background-image: url("../img/foto2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0px 200px 0px;
+    margin: 10px 0px;
+}
+#bla{
+    background-image: url("../img/foto3.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 300px 0px 300px 0px;
+    margin: 10px 0px;
+}
+#fone{
+    text-align: center;
+    font-size: 18px;
+    color:rgb(219, 215, 215);
+}
+#fone h2{
+    color: violet;
+    font-size: 20px;
+}
+#mc h2{
+    text-align: center;
+    color: rgb(219, 215, 215);
+    font-size: 18px;
+}
+#nossa h1{
+    color: violet;
+    text-align: center;
+    font-size: 25px;
+}
+#nossa {
+    color: rgb(219, 215, 215);
+    text-align: center;
+}
+nossa p{
+    font-size: 20px;
+}
+#link {
+    text-align: center;
+    color: violet;
+    font-size: 12px;
+}
+#mcf {
+    color: violet;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+}
+#mcf h2{
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(219, 215, 215);
+    text-align: center;
+}
+#tel {
+    color: violet;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+}
+#tel h2{
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(219, 215, 215);
+    text-align: center;
+}
+nav a{
+    border-bottom: 1px solid #EAEAEB;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+
+}
+}
+.menu{
+    margin: 0 0 50px 0;
+}
+.menu a{
+    text-decoration: none;
+    color: violet;
+    margin: 0;
+    line-height: 70px;
+    border: #333333;
+}
+.btns{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    line-height: 70px;
+    border-bottom: 2px solid #EAEAEB;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+.btns2{
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    line-height: 70px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 40px;
+    color: white;
+    background-position: center;
+}
+#toggle {
+    display: none;
+}
+@media only screen and (max-width: 500px){
+    label {
+        display: block;
+        cursor: pointer;
+
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+        color: #EAEAEB;
+    }
+    .menu a{
+        display: block;
+        border: bottom 1px solid #EAEAEB;
+        margim: 0;
+    }
+
+#toggle:checked + .menu{
+    display: block;
+}
+}
